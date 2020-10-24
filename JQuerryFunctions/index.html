@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JQuery Functions</title>
+  <style>
+    body {
+      width: 1200px;
+    }
+    .header {
+      padding:20px;
+      border:2px solid black;
+    }
+    .content {
+      padding: 20px;
+      border-bottom: 1px solid blue;
+    }
+    .content p {
+      display: none;
+    }
+    .btn {
+      border:1px solid red;
+      cursor: pointer;
+      margin:4px 2px;
+      text-align: center;
+    }
+    .lessons {
+      border: 1px solid red;
+    }
+    .navbar {
+      border: 1px solid black;
+      background-color: rosybrown;
+      margin-bottom: 20px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      padding-right:10px;
+    }
+    .fadeIn {
+      display: none;
+    }
+
+    .colorchange {
+      border: 1px solid blue;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class = "header">
+    <h1>My JQuery Basic Assignment</h1>
+  </div>
+  <div class="content">
+    <h2>Let's start with simple Q&A </h2>
+    <h4>What is JQuery?</h4><button class="btn">Click here for an answer</button>
+    <p>JQuery is JS framework, that cutdown many lines of code by making a library.
+      and also by simplifying for everyone.
+    </p>
+  </div>
+    <div class="lessons">
+    <h3>Let's try some basic functions of JQuery.</h3>
+    <button class="lessons_btn1">Hide</button>
+    <button class="lessons_btn2">Show</button>
+    <button class="lessons_btn3">Toggle</button>
+    <p>.hide() --> Description: Hide the matched elements.</p>
+    <p>.show() --> Description: show the matched elements.</p>
+    <p>.toggle() --> Description: Display or hide the matched elements.</p>
+  </div>
+  <div>
+    <h3> So we have talked about .hide(), .show() and .toggle() in last section.
+      Now let's see how .slideup(), .slidedown() and .slidetoggle() work.
+    </h3>
+    <p>I am making one navigation bar to understand this better</p>
+    <div class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+      </ul>
+    </div>
+    <button class="click_for_slideup">Click to hide menu</button>
+    <button class="click_for_slidedown">Click for the menu</button>
+    <button class="click_for_toggle">Click to toggle menu</button>
+  </div>
+  <div>
+    <h4>Yehhh... Awsome. It's fun. Let's try out some more functions.. </h4>
+    <p>.fadeIn -->Description: Display the matched elements by fading them to opaque.</p>
+    <p>.fadeOut -->Description: Works reverse than fadeIn.</p>
+    <p class = "try">
+        How are you doing?
+    </p>
+    <p class="fadeIn">
+      I am doing great.
+    </p>
+  </div>
+  <div class="addClass">
+    <p>you can change css property by adding class using .addClass()</p>
+  </div>
+  <div class="before_after">
+    <p>We can add content before and after the existing content by using .before() and .after()</p>
+    <button class="beforeButton">Click to test before</button>
+    <button class="afterButton">Click to test after</button>
+    <button class="appendButton">Click to test append</button>
+  </div>
+  <div class="difference">
+    <h3>Let's check out what's the difference between .html() and .text()</h3>
+    <p>Checkout for .html()</p>
+    <span>Checkout for .text()</span>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="ninja.js"></script>
+</body>
+</html>
