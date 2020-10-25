@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,36 +9,44 @@
     body {
       width: 1200px;
     }
+
     .header {
-      padding:20px;
-      border:2px solid black;
+      padding: 20px;
+      border: 2px solid black;
     }
+
     .content {
       padding: 20px;
       border-bottom: 1px solid blue;
     }
+
     .content p {
       display: none;
     }
+
     .btn {
-      border:1px solid red;
+      border: 1px solid red;
       cursor: pointer;
-      margin:4px 2px;
+      margin: 4px 2px;
       text-align: center;
     }
+
     .lessons {
       border: 1px solid red;
     }
+
     .navbar {
       border: 1px solid black;
       background-color: rosybrown;
       margin-bottom: 20px;
     }
+
     ul {
       display: flex;
       justify-content: space-between;
-      padding-right:10px;
+      padding-right: 10px;
     }
+
     .fadeIn {
       display: none;
     }
@@ -48,11 +57,11 @@
       color: white;
       padding: 20px;
     }
-
   </style>
 </head>
+
 <body>
-  <div class = "header">
+  <div class="header">
     <h1>My JQuery Basic Assignment</h1>
   </div>
   <div class="content">
@@ -62,7 +71,7 @@
       and also by simplifying for everyone.
     </p>
   </div>
-    <div class="lessons">
+  <div class="lessons">
     <h3>Let's try some basic functions of JQuery.</h3>
     <button class="lessons_btn1">Hide</button>
     <button class="lessons_btn2">Show</button>
@@ -91,8 +100,8 @@
     <h4>Yehhh... Awsome. It's fun. Let's try out some more functions.. </h4>
     <p>.fadeIn -->Description: Display the matched elements by fading them to opaque.</p>
     <p>.fadeOut -->Description: Works reverse than fadeIn.</p>
-    <p class = "try">
-        How are you doing?
+    <p class="try">
+      How are you doing?
     </p>
     <p class="fadeIn">
       I am doing great.
@@ -111,10 +120,16 @@
     <h3>Let's check out what's the difference between .html() and .text()</h3>
     <p>Checkout for .html()</p>
     <span>Checkout for .text()</span>
-
   </div>
+  <div class="attr-test" data-attr-test="hello">
+    <p></p>
+    <button class="attrButton">Click for attr test</button>
+  </div>
+  <input class="input" type="text" value="some text">
+  <button class="val-test">Click to get value</button>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="ninja.js"></script>
 </body>
+
 </html>

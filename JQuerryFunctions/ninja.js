@@ -2,7 +2,6 @@ $(".btn").click(function(){
   $(".content p").fadeIn("slow");
 });
 
-
 $(".lessons_btn1").click(function(){
   $(".lessons p").hide();
 });
@@ -37,11 +36,9 @@ $(".click_for_slideup" ).click(function() {
     $(".fadeIn").fadeOut("slow");
   });
 
-
   document.onkeydown = function(e) {
     if(e.keyCode === 40) $(".addClass p").addClass("colorchange");
   };
-
 
   document.onkeyup = function(e) {
     if(e.keyCode === 38) $(".addClass p").removeClass("colorchange");
@@ -64,4 +61,12 @@ $(".click_for_slideup" ).click(function() {
   });
 
   $(".difference span" ).hover(function() {$( ".difference span" ).text("<p>Hello there!</p>");
+  });
+
+  $(".attrButton" ).click(function() {
+    $(".attr-test p").html($(".attr-test").attr("data-attr-test"));
+  });
+
+  $(".val-test" ).click(function() {
+    alert($(".input").val());
   });
